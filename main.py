@@ -13,7 +13,9 @@ st.write("HUGO GURGEL")
 
 # === AUTENTICAÇÃO COM GOOGLE SHEETS ===
 with open("/tmp/cred.json", "w") as f:
-    json.dump(st.secrets["gcp_service_account"], f)
+    # Converte o conteúdo inteiro em dicionário com strings
+    credentials_dict = {k: str(v) for k, v in st.secrets["gcp_service_account"].items()}
+    json.dump(credentials_dict, f)
 
 credenciais = pygsheets.authorize(service_file="/tmp/cred.json")
 
