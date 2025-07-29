@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "custom-woodland-392216",
+  "private_key_id": "8832e06dc23b81adf7e7f0521fbd5e58f0fc0951",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDclYAWWyDGkTbG\nJNBi/VHANYHeWyuo0aCkRsGCsJW4v79baHX+dLPceA0ZnlM/Q8OuEWAIimaQFLC/\nDGs/LVp1r76NnaLXdzcfKrwryE9e/Yr75Vv1k4NaC9EgJuirA5xtZMyDUmROhmz7\nuSV7uXJwHv/arMv8M7bEYT04S9XChmyPvb7FiGZXVGI7Wd3GDEeB3NgTvpNy+Nuo\noMOwVVL9aitY6utGUifeUgdjimmjA7H6/WSnBn1C3opb09I31V6RdCGrzr91NCUh\nPWB5FHwww1MH12MIGXhVRMHEl4SAZM7iyOcNlWRsM1E7oCRivvD4ddKZx60EYPnn\nf8GoUIh5AgMBAAECggEAIs9BiNr1olBNMq9MPAAviU5drF96gCggmnwDUqKXkLGg\nZYY9GfGEZrYtPw3h+ORdOhgfgwmFjkGC84s8AMV2oTF24otDT475Ibp75R7gY6RN\nmAXFtsyCGHuFPiErFhMPpEsZY7SPWWhTmip0FKvFuEA0GRKsGCR4YvzYt+HDyHAP\neatc7wTXYN8dC5ZcHqSMBrRgyx1R0LiLVkE23rTksi2g5NPury3moWDiv5iXwnqv\n7u7W26T8HrNvSPUOKSRKo3SNwekoW8K308LDub5DuKG9Sg4dBAV70MtI1Qy/+FrJ\nqo71IA8hf8pwJITTBt3vGpVKWn23Yo479rNJPn60NwKBgQD0UoyYsupudubNSVef\nkP6vjVBTc4l/62jK5Agmo65PvI/3zDOgimLUDAXgpZ3lwcD0kdPpBvLqlmnQmUsy\nm1TPwgHIBoVZpzQdzBWb1QEHZg94d5igo58hYcD4Dozxi6I9qnV4t4+P1Lky0kEo\n24zeTJA8tBmiNJGQYhv//XmxpwKBgQDnIH6uUPvYwLHiwGTGjACT2jfZsaSei7My\nZmF168P+H6E/OdbAsz+ilkNA7DyS/FmfQjTWXLCxzNTiHThqpsafZJQ2EGUrBKxt\nXonhmP/PupCGXwBb/GEHkuFvDIjdEGgrLfBecsNRTbXdszKgyodo5OSvAZym9JYM\n+acR08P43wKBgQDb/WA/NgpEQKd8/Kb7NFE+vN0w5v1NwyfuV/jG4ebYQQ7YrnNm\nAHUQPWslZbqQ4C7fiFbooaskcx8ABqdg/+AT2bpE4yo7GYSht9tVHyv3/3u6muVA\n71MfeaeJM4DRFUuWft+bPJz1gzLmgc7N/TIQD5xoLDpQhUj0WoKfsxpaTQKBgDqm\n5V7pEDAeHkYzmp9D8fWTP+8PhH3zZ6MXlg3tqYv4jNvVmqjGFBT3WtPD309RmJCw\npWXsma5VE4TZ83IlJmxWgsIBgRrckcEjZ4wHXothhcGDpDyznA/m9yxOGwE2Y6jp\nfIELUIN2W/uJuQRSwPAefeXnW9CGavmZ9QqyGZ4zAoGBANeS2xgIz95OIQbSlwHu\ntg70NoqIQLg2nydq53/+xRpbqQBoy9/9jv6yzH+ugiqM9VtPLkGCd80cL36hRMo1\ncMBV92//PiT6BRVJvYCR65iUgSL21ukc73VI+9+ME+0OON5jfwLmTYdNLG68dMJJ\nFRZcXfr0A3hukPUFguwQXTZg\n-----END PRIVATE KEY-----\n",
+  "client_email": "planilhabase@custom-woodland-392216.iam.gserviceaccount.com",
+  "client_id": "117229604540676166864",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/planilhabase%40custom-woodland-392216.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
