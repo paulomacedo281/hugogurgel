@@ -63,7 +63,7 @@ if coluna_data in df.columns:
         if coluna_exame in df.columns:
             exames_disponiveis = ["ECG", "MAPA", "HOLTER"]
             exames_selecionados = st.multiselect(
-                "Selecione o(s) exame(s):",
+                "Selecione o(s) tipos de exame(s):",
                 options=exames_disponiveis,
                 default=exames_disponiveis
             )
@@ -83,6 +83,7 @@ else:
 
 # Exibe resultado
 st.dataframe(df_filtrado.style.hide(axis="index"), height=800)
+
 
 
 
