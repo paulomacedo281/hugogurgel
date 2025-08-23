@@ -7,13 +7,19 @@ from datetime import datetime
 # Configura a página com largura total
 st.set_page_config(page_title="Sistema de Laudos", layout="wide")
 
-# Título do app
-st.title("SISTEMA DE LAUDOS ON-LINE")
-st.write("HUGO GURGEL")
+# === CABEÇALHO COM LOGO E TÍTULO ===
+col1, col2 = st.columns([0.15, 0.85])  # ajuste a proporção conforme necessário
+
+with col1:
+    # Substitua pelo caminho do arquivo local ou pela URL da logo
+    st.image("HUGO.png", width=80)
+
+with col2:
+    st.title("SISTEMA DE LAUDOS ON-LINE")
+    st.write("HUGO GURGEL")
 
 # === AUTENTICAÇÃO COM GOOGLE SHEETS ===
 with open("/tmp/cred.json", "w") as f:
-    # Converte o conteúdo inteiro em dicionário com strings
     credentials_dict = {k: str(v) for k, v in st.secrets["gcp_service_account"].items()}
     json.dump(credentials_dict, f)
 
@@ -59,7 +65,7 @@ if coluna_data in df.columns:
             exames_selecionados = st.multiselect(
                 "Selecione o(s) exame(s):",
                 options=exames_disponiveis,
-                default=exames_disponiveis  # mostra todos por padrão
+                default=exames_disponiveis
             )
 
             if exames_selecionados:
@@ -77,3 +83,5 @@ else:
 
 # Exibe resultado
 st.dataframe(df_filtrado.style.hide(axis="index"), height=800)
+
+
