@@ -15,8 +15,8 @@ with col1:
     st.image("HUGO.png", width=200)
 
 with col2:
-    st.title("SISTEMA DE LAUDOS ON-LINE")
-    st.write("HUGO GURGEL")
+    st.title("LAUDOS CLINICA DR HUGO GURGEL")
+    
 
 # === AUTENTICAÇÃO COM GOOGLE SHEETS ===
 with open("/tmp/cred.json", "w") as f:
@@ -83,6 +83,7 @@ else:
 
 # Exibe resultado
 st.dataframe(df_filtrado.style.hide(axis="index"), height=800)
+
 
 
 
