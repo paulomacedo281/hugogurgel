@@ -12,7 +12,7 @@ col1, col2 = st.columns([0.15, 0.85])  # ajuste a proporção conforme necessár
 
 with col1:
     # Substitua pelo caminho do arquivo local ou pela URL da logo
-    st.image("HUGO.png", width=80)
+    st.image("HUGO.png", width=200)
 
 with col2:
     st.title("SISTEMA DE LAUDOS ON-LINE")
@@ -83,5 +83,6 @@ else:
 
 # Exibe resultado
 st.dataframe(df_filtrado.style.hide(axis="index"), height=800)
+
 
 
