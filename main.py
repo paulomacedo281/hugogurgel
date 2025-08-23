@@ -29,24 +29,43 @@ headers = data[0][:7]
 conteudo = [linha[:7] for linha in data[1:]]
 
 df = pd.DataFrame(conteudo, columns=headers)
+
 coluna_data = "DATA DO AQUIVO"
+coluna_exame = "TIPO DE EXAME"
 
 if coluna_data in df.columns:
     try:
+        # Converte a coluna de datas
         df[coluna_data] = pd.to_datetime(df[coluna_data], errors='coerce', dayfirst=True)
         df = df.dropna(subset=[coluna_data])
 
+        # Intervalo mínimo e máximo
         data_min = df[coluna_data].min()
         data_max = df[coluna_data].max()
 
+        # Seletores de data
         data_inicial = st.date_input("Data inicial", value=data_min.date(), format="DD/MM/YYYY")
         data_final = st.date_input("Data final", value=data_max.date(), format="DD/MM/YYYY")
 
+        # --- FILTRO POR DATA ---
         df_filtrado = df[
             (df[coluna_data] >= pd.to_datetime(data_inicial)) &
             (df[coluna_data] <= pd.to_datetime(data_final))
         ].copy()
 
+        # --- FILTRO POR TIPO DE EXAME ---
+        if coluna_exame in df.columns:
+            exames_disponiveis = ["ECG", "MAPA", "HOLTER"]
+            exames_selecionados = st.multiselect(
+                "Selecione o(s) exame(s):",
+                options=exames_disponiveis,
+                default=exames_disponiveis  # mostra todos por padrão
+            )
+
+            if exames_selecionados:
+                df_filtrado = df_filtrado[df_filtrado[coluna_exame].isin(exames_selecionados)]
+
+        # Formata a coluna de data
         df_filtrado[coluna_data] = df_filtrado[coluna_data].dt.strftime("%d/%m/%Y")
 
     except Exception as e:
@@ -56,4 +75,5 @@ else:
     st.warning(f"A coluna '{coluna_data}' não foi encontrada.")
     df_filtrado = df.copy()
 
+# Exibe resultado
 st.dataframe(df_filtrado.style.hide(axis="index"), height=800)
