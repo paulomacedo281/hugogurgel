@@ -144,4 +144,3 @@ st.dataframe(
     df_filtrado.style.hide(axis="index"),
     height=800
 )
-
